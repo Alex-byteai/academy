@@ -4,12 +4,12 @@ import './index.css'
 import App from './App.tsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { Suspense } from 'react'
-import LoginPage from './pages/LoginPage'
-import DashboardPage from './pages/DashboardPage'
-import ProjectPage from './pages/ProjectPage'
-import ProfilePage from './pages/ProfilePage'
-import GroupPage from './pages/GroupPage'
-import NotFoundPage from './pages/NotFoundPage'
+import LoginPage from './pages/LoginPage.tsx'
+import DashboardPage from './pages/DashboardPage.tsx'
+import ProjectPage from './pages/ProjectPage.tsx'
+import ProfilePage from './pages/ProfilePage.tsx'
+import GroupPage from './pages/GroupPage.tsx'
+import NotFoundPage from './pages/NotFoundPage.tsx'
 
 const router = createBrowserRouter([
   {
