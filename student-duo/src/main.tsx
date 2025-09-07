@@ -4,6 +4,7 @@ import './index.css'
 import App from './App.tsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { Suspense } from 'react'
+import { Toaster } from 'react-hot-toast'
 import LoginPage from './pages/LoginPage.tsx'
 import DashboardPage from './pages/DashboardPage.tsx'
 import ProjectPage from './pages/ProjectPage.tsx'
@@ -30,6 +31,7 @@ createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <Suspense>
       <RouterProvider router={router} />
+      <Toaster position="top-center" />
     </Suspense>
   </StrictMode>
 )
