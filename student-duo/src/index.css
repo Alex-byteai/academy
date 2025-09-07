@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+:root {
+  --brand-green: #22c55e; /* green-500 */
+  --brand-blue: #3b82f6;  /* blue-500 */
+  --brand-yellow: #f59e0b; /* amber-500 */
+}
+
+html, body, #root { height: 100%; }
+
+body {
+  font-family: 'Nunito', ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Apple Color Emoji', 'Segoe UI Emoji';
+  @apply bg-gray-50 text-gray-900 antialiased;
+}
+
+a { @apply text-blue-600 hover:text-blue-700; }
+
+.app-gradient {
+  background: radial-gradient(1200px 600px at -10% -10%, rgba(59,130,246,0.12), transparent 60%),
+              radial-gradient(1200px 600px at 110% -10%, rgba(34,197,94,0.10), transparent 60%),
+              radial-gradient(1200px 600px at 50% 110%, rgba(245,158,11,0.10), transparent 60%);
+}
+
+.card-shadow { box-shadow: 0 10px 20px -12px rgba(0,0,0,0.1), 0 6px 12px -8px rgba(0,0,0,0.08); }
